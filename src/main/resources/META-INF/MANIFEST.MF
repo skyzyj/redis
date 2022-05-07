@@ -1,0 +1,1 @@
+Premain-Class: com.itos.redis_demo.agent.ObjectSizeAgent

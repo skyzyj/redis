@@ -1,0 +1,20 @@
+spring:
+  redis:
+   # password: 123456
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+        max-wait: 1000ms
+      shutdown-timeout: 100ms
+    cluster:
+      nodes:
+        - 192.168.131.128:7001
+        - 192.168.131.128:7002
+        - 192.168.131.128:7003
+        - 192.168.131.128:7004
+        - 192.168.131.128:7005
+        - 192.168.131.128:7006
+      max-redirects: 3
+
